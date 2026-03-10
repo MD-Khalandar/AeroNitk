@@ -1,5 +1,91 @@
 body{
-    padding-bottom: 900px;
-    padding-top: 95px;
     
+   padding-bottom: 900px; 
+}
+.hero-img-section{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+   
+
+}
+.hero-logo{
+    width: 100%;
+    
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.458);
+    position: absolute;
+    bottom: 0;
+    top : 0;
+    display:flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+}
+.hero-Title{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 120px;
+}
+.hero-subtitle{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+}
+.about-section{
+  font-family: 'montserrat', sans-serif;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-content h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+    
+}
+.about-content p{
+    max-width: 700px;
+    line-height: 40px;
+    margin-bottom: 100px;
+    font-size:23px
+}
+.drone-img{
+    width: 550px;
+}
+.about-text{
+    flex:1;
+
+}
+.learn-btn{
+    background-color: #076fb9;
+    color: white;
+    padding: 8px 14px;
+    font-size: 20px;
+    border-radius: 3px;
+    transition: 0.3s;
+    border: solid;
+    border-width: 1px;
+    border-color: #076fb9;
+}
+.learn-btn:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #076fb9;
 }
