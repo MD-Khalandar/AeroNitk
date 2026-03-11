@@ -1,6 +1,6 @@
 body{
     
-   padding-bottom: 900px; 
+   background-color: black;
 }
 .hero-img-section{
     position: relative;
@@ -45,6 +45,7 @@ body{
   padding: 40px 60px;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 .about-content{
     display: flex;
@@ -154,58 +155,98 @@ body{
     background-color:black;
     padding-top :100px
 }
-.timeline-header {
-    text-align: center;
-    font-size: 32px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    margin-bottom: 60px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    position: relative;
-    z-index: 2;
+
+
+@media (max-width: 1024px){
+
+
+
+.hero-Title{
+    font-size:70px;
 }
-.timeline{
-    background-color: black;
-    padding-top: 150px;
-    padding-bottom: 150px;
+
+.about-content{
+    flex-direction:column;
+    text-align:center;
 }
+
+.drone-img{
+    width:400px;
+}
+
+.slider{
+    width:90%;
+}
+
 .timeline-grid{
-    background-color: black;
-    margin :auto;
-    max-width: 750px;
-    display: grid;
-    grid-template-columns: 1fr 3px 1fr;
-    color:white;
-    font-family: 'Roboto', sans-serif;
-    column-gap: 40px;
+    grid-template-columns:1fr 3px 1fr;
+    max-width:600px;
+}
+
+.footer-container{
+    gap:40px;
+}
 
 }
+
+@media (max-width: 768px){
+
+
+
+.left-header{
+    display:none;   
+}
+
+
+.hero-Title{
+    font-size:45px;
+}
+
+.hero-subtitle{
+    font-size:14px;
+}
+
+
+.about-section{
+    padding:40px 20px;
+}
+
+.drone-img{
+    width:100%;
+}
+
+
+.slider{
+    width:95%;
+    height:300px;
+}
+
+
+.timeline-grid{
+    grid-template-columns:1fr;
+}
+
 .component-middle{
-    background:#fff3;
-    position: relative;
+    display:none;
 }
 
-.timeline-point {
-top:0;
-left:50%;
-transform: translateX(-50%);
-position: absolute;
-width: 20px;
-height: 20px;
-border-radius: 50%;
-background-color: rgb(0, 0, 0);
-border:solid;
-border-color:#2983e6;
-box-shadow: 0 0 10px #2983e6, 0 0 20px #2983e6;
-}
 .timeline-component{
-    height: 170px;
-    padding:1.5em;
-    background:#ffffff0d;
-    border-radius: 10px;
-    border:solid;
-    border-color:rgba(255, 255, 255, .1);
-    border-width: 1px;
+    height:auto;
 }
+
+
+.footer{
+    padding:40px 30px;
+}
+
+.footer-container{
+    flex-direction:column;
+    gap:30px;
+}
+
+.footer-logo img{
+    width:90px;
+}
+
+}
+
