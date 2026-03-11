@@ -27,3 +27,14 @@ document.querySelector('.prev').addEventListener('click',()=>{
     }
     slideshow(index);
 })
+window.addEventListener("scroll", function() {
+
+    let header = document.querySelector(".Header");
+
+    if (window.scrollY > 120) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+
+});
