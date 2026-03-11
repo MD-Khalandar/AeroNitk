@@ -16,20 +16,26 @@
     right: 0px;
     z-index: 100;
     
-    transition: all 0.4s ease;
+    transition: all 0.9s ;
 }
 .Header.scrolled{
-    justify-content: center;
     height:60px;
     background: rgba(0,0,0,0.9);
+    justify-content: right;
 }
 .Header.scrolled .logo{
     display: none;
+}
+.Header.scrolled .left-header{
+    transform: translateX(-320px);
 }
 .left-header{
     display: flex;
     flex-direction: row;
     gap: 29px;
+     transition: transform 0.4s ease;
+   
+
 }
 .left-header a {
     font-family:'montserrat', sans-serif;
