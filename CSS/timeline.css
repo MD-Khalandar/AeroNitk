@@ -70,5 +70,14 @@ box-shadow: 0 0 10px #2983e6, 0 0 20px #2983e6;
     border:solid;
     border-color:rgba(255, 255, 255, .1);
     border-width: 1px;
+    transition: 0.3s;
 }
+.timeline-component:hover{
+   
+    border-color:rgb(43, 56, 129);
+    box-shadow: 0 0 10px rgba(112, 129, 230, 0.2), 0 0 20px rgba(112, 129, 230, 0.2);
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+ 
 

@@ -1,6 +1,12 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body{
     
    background-color: black;
+   scroll-behavior: smooth;
 }
 .hero-img-section{
     position: relative;
@@ -249,4 +255,67 @@ body{
 }
 
 }
+
+.contact-section{
+    background:#f3f3f3;
+    padding:100px 20px;
+    text-align:center;
+    font-family:'Montserrat', sans-serif;
+}
+
+.contact-small{
+    font-size:18px;
+    color:#555;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.contact-title{
+    font-size:40px;
+    letter-spacing:3px;
+    margin-bottom:40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.contact-form{
+    max-width:650px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.name-row{
+    display:flex;
+    gap:20px;
+}
+
+.name-row input{
+    flex:1;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+textarea{
+    height:150px;
+    resize:none;
+}
+
+button{
+    background:#4e8db8;
+    color:white;
+    padding:16px;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
 
