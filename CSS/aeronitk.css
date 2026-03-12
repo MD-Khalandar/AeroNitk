@@ -317,5 +317,46 @@ button{
     font-size:18px;
     cursor:pointer;
 }
+@media (max-width: 768px){
+
+/* make timeline a single column */
+.timeline-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* hide the empty placeholders */
+.component-empty{
+    display: none;
+}
+
+/* keep the dot aligned left */
+.component-middle{
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+/* timeline content full width */
+.timeline-component{
+    text-align: left !important;
+    padding-left: 30px;
+}
+
+/* make text smaller */
+.timeline-title{
+    font-size: 18px;
+}
+
+.timeline-description{
+    font-size: 14px;
+}
+
+/* move dot closer to content */
+.timeline-point{
+    margin-left: 5px;
+}
+
+}
 
 
