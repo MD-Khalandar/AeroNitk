@@ -12,8 +12,9 @@
     color: #ffffff;
     font-size: 24px;
     font-weight: 500;
-    margin-top: 5px;
-    margin-bottom: 16px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .timeline-header {
@@ -63,7 +64,7 @@ border-color:#2983e6;
 box-shadow: 0 0 10px #2983e6, 0 0 20px #2983e6;
 }
 .timeline-component{
-    height: 170px;
+    height: 150px;
     padding:1.5em;
     background:#ffffff0d;
     border-radius: 10px;
@@ -79,5 +80,9 @@ box-shadow: 0 0 10px #2983e6, 0 0 20px #2983e6;
     cursor: pointer;
     transform: translateY(-5px);
 }
- 
+.timeline-description{
+    line-height: 25px;
+    letter-spacing: 1.618px;
+    
+} 
 
