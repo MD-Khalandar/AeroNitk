@@ -17,7 +17,7 @@ body{
 }
 .hero-logo{
     width: 100%;
-    
+    transition: opacity 0.8s ease;
 }
 .overlay{
     width: 100%;
@@ -37,6 +37,7 @@ body{
     color: white;
     letter-spacing: 2px;
     font-size: 120px;
+    animation: heroFadeDown 1.2s ease forwards;
 }
 .hero-subtitle{
     font-family: 'Orbitron', sans-serif;
@@ -44,7 +45,30 @@ body{
     color: white;
     letter-spacing: 5px;
     font-size: 20px;
-
+    opacity: 0;
+    animation: heroSubFadeUp 1s ease 0.8s forwards;
+}
+@keyframes heroFadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+        letter-spacing: 20px;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        letter-spacing: 2px;
+    }
+}
+@keyframes heroSubFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .about-section{
   font-family: 'montserrat', sans-serif;
@@ -72,48 +96,33 @@ body{
     margin-bottom: 100px;
     font-size:23px
 }
+.drone-img {
+    opacity: 0;
+}
 .drone-img-transition{
     width: 550px;
     position: absolute;
     top: 0;
     right:0;
-
-    animation: slideInFromLeft 3s  forwards ;
-    
+    opacity: 1;
+    animation: slideInFromRight 1.5s ease-out forwards;
 }
-@keyframes slideInFromLeft {
-     0%{
-        transform: translateX(-120vw);
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(120vw);
     }
-
-    100%{
+    100% {
         transform: translateX(0);
     }
-    }
-
-@keyframes TextFadeIn {
-    0%{
-        opacity:0;
-        transform: translateX(-50px);
-    }
-
-    40%{
-        opacity:0;
-    }
-
-    100%{
-        opacity:1;
-        transform: translateX(0);
-    }
-
 }
-.about-text-transtion{
-   
-    
+.about-text {
     opacity: 0;
-    animation: TextFadeIn 2.5s  forwards;
-   
-
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.about-text-transition {
+    opacity: 1;
+    transform: translateX(0);
 }
 .learn-btn{
     background-color: #076fb9;
@@ -148,7 +157,7 @@ body{
     object-fit: cover;
     position: absolute;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 0.7s ease-in-out;
 }
 
 .slide.active{
@@ -164,7 +173,12 @@ body{
     font-size: 25px;
     padding: 10px;
     cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease;
+    border-radius: 4px;
 }
+
+.prev:hover { left: 20px; background: rgba(41, 131, 230, 0.8); transform: translateY(-50%) scale(1.1); }
+.next:hover { right: 20px; background: rgba(41, 131, 230, 0.8); transform: translateY(-50%) scale(1.1); }
 
 .prev{ left: 20px; }
 .next{ right: 20px; }
@@ -194,7 +208,14 @@ body{
     justify-content: center;
     align-items:center;
     background-color:black;
-    padding-top :100px
+    padding-top :100px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.slider-flex-box.sfb-visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
@@ -296,6 +317,13 @@ body{
     padding:100px 20px;
     text-align:center;
     font-family:'Montserrat', sans-serif;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.contact-section.cs-visible{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contact-small{
